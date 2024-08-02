@@ -10,7 +10,7 @@ const orderSlice = createSlice({
       state.orders = action.payload.map((order) => {
         return {
           id: order._id,
-          name: order.name,
+          username: order.username,
           email: order.email,
           address: order.address,
           pickupDate: order.pickupDate,
@@ -37,7 +37,7 @@ const orderSlice = createSlice({
       );
       state.orders[index] = {
         id: action.payload.id,
-        name: action.payload.name,
+        username: action.payload.username,
         email: action.payload.email,
         address: action.payload.address,
         pickupDate: action.payload.pickupDate,
