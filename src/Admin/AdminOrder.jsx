@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteOrder, getOrder } from "../Redux/OrderSlice";
 import { Link } from "react-router-dom";
@@ -7,13 +7,11 @@ import { Button } from "flowbite-react";
 import ProductNav from "../Products/ProductNav";
 
 const AdminOrder = () => {
-
   const dispatch = useDispatch();
 
   const order = useSelector((state) => state.order.orders);
 
   console.log(order);
-  
 
   useEffect(() => {
     fetchData();
@@ -35,7 +33,7 @@ const AdminOrder = () => {
       const res = await axios.delete(
         `https://car-service-backend-5142.onrender.com/api/order/delete-order/${id}`
       );
-      dispatch(deleteOrder({id}));
+      dispatch(deleteOrder({ id }));
     } catch (error) {
       console.log(error);
     }
@@ -43,7 +41,7 @@ const AdminOrder = () => {
 
   return (
     <div>
-      <ProductNav/>
+      <ProductNav />
       <div className="d-flex  justify-content-center">
         <div className="w-70 bg-slate-300 rounded p-3">
           <h1 className="text-center">Orders</h1>
@@ -71,8 +69,8 @@ const AdminOrder = () => {
             <tbody>
               {order.map((ele, index) => (
                 <tr key={index}>
-                  {/* //<td>{ele.username}</td> */}
-                  {/* <td>{ele.email}</td> */}
+                  <td>{ele.name}</td>
+                  <td>{ele.email}</td>
                   <td>{ele.productName}</td>
                   <td>{ele.address}</td>
                   <td>{ele.pickupDate} </td>
