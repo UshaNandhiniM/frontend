@@ -15,7 +15,7 @@ const AdminOrder = () => {
 
   useEffect(() => {
     fetchData();
-  }, [0]);
+  }, []);
 
   const fetchData = async () => {
     try {
@@ -23,7 +23,6 @@ const AdminOrder = () => {
         "https://car-service-backend-5142.onrender.com/api/order/getorder"
       );
       dispatch(getOrder(response.data.bookings));
-      console.log(response);
     } catch (error) {
       console.log(error);
     }
