@@ -68,8 +68,8 @@ const AdminOrder = () => {
             <tbody>
               {order.map((ele, index) => (
                 <tr key={index}>
-                  <td>{ele.username.name}</td>
-                  <td>{ele.email.email}</td>
+                  <td>{ele.currentUser.name}</td>
+                  <td>{ele.currentUser.email}</td>
                   <td>{ele.productName}</td>
                   <td>{ele.address}</td>
                   <td>{ele.pickupDate} </td>
