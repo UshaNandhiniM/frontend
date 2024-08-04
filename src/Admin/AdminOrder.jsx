@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 import { Button } from "flowbite-react";
 import ProductNav from "../Products/ProductNav";
 
+
 const AdminOrder = () => {
   const dispatch = useDispatch();
-  const { currentUser } = useSelector((state) => state.auth);
+
 
   const order = useSelector((state) => state.order.orders);
   console.log(order);
@@ -16,6 +17,7 @@ const AdminOrder = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
 
   const fetchData = async () => {
     try {
@@ -68,8 +70,8 @@ const AdminOrder = () => {
             <tbody>
               {order.map((ele, index) => (
                 <tr key={index}>
-                  <td>{ele.currentUser.name}</td>
-                  <td>{ele.currentUser.email}</td>
+                  <td>{ele.name}</td>
+                  <td>{ele.email}</td>
                   <td>{ele.productName}</td>
                   <td>{ele.address}</td>
                   <td>{ele.pickupDate} </td>
