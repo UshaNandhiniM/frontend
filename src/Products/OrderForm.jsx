@@ -63,6 +63,7 @@ const OrderPage = () => {
 
   const handleRemove = (productId) => {
     dispatch(deleteCart(productId));
+    navigate("/cart");
   };
 
   return (
