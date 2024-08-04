@@ -39,16 +39,18 @@ const Contact = () => {
       </nav>
 
       <div className="py-20 px-4 max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4 text-slate-800">About Us</h1>
+        <h1 className="text-3xl font-bold mb-4 text-slate-800">Contact Us</h1>
         <h1 className="text-2xl">
           Car care aspires to be a one-stop solution for all car care needs
         </h1>
         <br />
+        <div className="flex ">
         <div>Email: Info@carCare.in</div>
         <div>Phone: +91-9876543210</div>
         <div>Address: 123 Main St, Anytown, USA</div>
         <div>Working Days : Monday-Sunday</div>
         <div>Working Hours :7:00AM - 9:00PM (IST)</div>
+        </div>
       </div>
     </div>
   );
