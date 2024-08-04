@@ -81,11 +81,6 @@ const ProductNav = () => {
                   </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/" className="nav-link">
-                      checkout
-                    </Link>
-                  </li>
-                  <li className="nav-item">
                     <Link to="/contact" className="nav-link">
                       contact
                     </Link>

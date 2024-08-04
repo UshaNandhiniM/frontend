@@ -16,6 +16,7 @@ import Order from "./Products/Order";
 import AdminOrder from "./Admin/AdminOrder";
 import PaymentPage from "./Products/PaymentPage";
 import UpdateOrder from "./Admin/UpdateOrder";
+import Contact from "./Products/Contact";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/cart" element={<Order/>} />
           <Route path="/payment" element={<PaymentPage/>}/>
           <Route path="/editorder/:id" element={<UpdateOrder/>}/>
+          <Routh path="/contact" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </div>
