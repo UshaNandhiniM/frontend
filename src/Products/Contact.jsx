@@ -44,21 +44,11 @@ const Contact = () => {
           Car care aspires to be a one-stop solution for all car care needs
         </h1>
         <br />
-       <div>
-        Email: Info@carCare.in
-       </div>
-       <div>
-        Phone: +91-9876543210
- </div>
- <div>
-        Address: 123 Main St, Anytown, USA
-</div>
-<div>
-    Working Days : Monday-Sunday
-</div>
-<div>
-    Working Hours :7:00AM - 9:00PM (IST)
-</div>
+        <div>Email: Info@carCare.in</div>
+        <div>Phone: +91-9876543210</div>
+        <div>Address: 123 Main St, Anytown, USA</div>
+        <div>Working Days : Monday-Sunday</div>
+        <div>Working Hours :7:00AM - 9:00PM (IST)</div>
       </div>
     </div>
   );
