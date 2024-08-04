@@ -8,9 +8,9 @@ import ProductNav from "../Products/ProductNav";
 
 const AdminOrder = () => {
   const dispatch = useDispatch();
+  const { currentUser } = useSelector((state) => state.auth);
 
   const order = useSelector((state) => state.order.orders);
-
   console.log(order);
 
   useEffect(() => {
@@ -68,8 +68,8 @@ const AdminOrder = () => {
             <tbody>
               {order.map((ele, index) => (
                 <tr key={index}>
-                  <td>{ele.name}</td>
-                  <td>{ele.email}</td>
+                  <td>{ele.username.name}</td>
+                  <td>{ele.email.email}</td>
                   <td>{ele.productName}</td>
                   <td>{ele.address}</td>
                   <td>{ele.pickupDate} </td>
