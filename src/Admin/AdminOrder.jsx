@@ -44,7 +44,7 @@ const AdminOrder = () => {
     <div>
       <ProductNav />
       <div className="d-flex  justify-content-center">
-        <div className="w-70 bg-slate-300 rounded p-3">
+        <div >
           <h1 className="text-center">Orders</h1>
           <br />
 
