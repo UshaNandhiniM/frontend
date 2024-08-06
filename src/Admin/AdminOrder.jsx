@@ -54,15 +54,15 @@ const AdminOrder = () => {
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Service Name</th>
-                {/* <th scope="col">Address</th>
-                <th scope="col">Date</th>
-                <th scope="col">Phone Number</th> */}
+                <th scope="col">Address</th>
+                {/* <th scope="col">Date</th> */}
+                <th scope="col">Phone Number</th>
                 <th scope="col">Car Fuel Type</th>
                 <th scope="col">Car Brand</th>
                 <th scope="col">Car Number</th>
                 <th scope="col">NoteDown</th>
                 <th scope="col">Total Price</th>
-                <th scope="col">Payment Status</th>
+                {/* <th scope="col">Payment Status</th> */}
                 <th scope="col">Status</th>
                 <th span={2}>Actions</th>
               </tr>
@@ -73,15 +73,15 @@ const AdminOrder = () => {
                   <td>{ele.name}</td>
                   <td>{ele.email}</td>
                   <td>{ele.productName}</td>
-                  {/* <td>{ele.address}</td>
-                  <td>{ele.pickupDate} </td>
-                  <td>{ele.phonenumber}</td> */}
+                  <td>{ele.address}</td>
+                  {/* <td>{ele.pickupDate} </td> */}
+                  <td>{ele.phonenumber}</td>
                   <td>{ele.carFuelType}</td>
                   <td>{ele.carBrand}</td>
                   <td>{ele.carNumber}</td>
                   <td>{ele.noteDown}</td>
                   <td>{ele.totalPrice}</td>
-                  <td>{ele.paymentStatus}</td>
+                  {/* <td>{ele.paymentStatus}</td> */}
                   <td>{ele.status}</td>
 
                   <td>
