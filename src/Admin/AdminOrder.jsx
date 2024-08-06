@@ -24,7 +24,7 @@ const AdminOrder = () => {
       const response = await axios.get(
         "https://car-service-backend-5142.onrender.com/api/order/getorder"
       );
-      dispatch(getOrder(response.data.bookings));
+      dispatch(getOrder(response.data.bookings.reverse()));
     } catch (error) {
       console.log(error);
     }
