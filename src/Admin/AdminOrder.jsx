@@ -54,9 +54,9 @@ const AdminOrder = () => {
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Service Name</th>
-                <th scope="col">Address</th>
+                {/* <th scope="col">Address</th>
                 <th scope="col">Date</th>
-                <th scope="col">Phone Number</th>
+                <th scope="col">Phone Number</th> */}
                 <th scope="col">Car Fuel Type</th>
                 <th scope="col">Car Brand</th>
                 <th scope="col">Car Number</th>
@@ -73,9 +73,9 @@ const AdminOrder = () => {
                   <td>{ele.name}</td>
                   <td>{ele.email}</td>
                   <td>{ele.productName}</td>
-                  <td>{ele.address}</td>
+                  {/* <td>{ele.address}</td>
                   <td>{ele.pickupDate} </td>
-                  <td>{ele.phonenumber}</td>
+                  <td>{ele.phonenumber}</td> */}
                   <td>{ele.carFuelType}</td>
                   <td>{ele.carBrand}</td>
                   <td>{ele.carNumber}</td>
